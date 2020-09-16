@@ -3,13 +3,9 @@
 
 <head>
   <title>Information on the Barn Owl</title>
+  <link href="externalStyleSheet.css" rel="stylesheet">
   <meta charset="UTF-8">                              <!--The style tag below makes the curse go in circles-->
-  <style>
-    .button {
-      cursor: wait;
-    }
 
-  </style>
                                                       <!--My advanced HTML that displays the hidden colorful text and has an alert when the predator button is pressed-->
   <script type="text/javascript">
     function mybutton() {
@@ -22,12 +18,12 @@
   </script>
 </head>
 
-<body style="background-color:#E8F8F5">               <!--Set the background color to powderblue-->
-  <h1 style="text-align:center;">                     <!--Large title for the website-->
+<body>                                                  <!--Set the background color to powderblue-->
+  <h1>                                                  <!--Large title for the website-->
     The Barn Owl &#129417;
   </h1>
 
-  <p style="font-size:20px">                          <!--A quick description of the barn owl in a paragraph-->
+  <p>                                                   <!--A quick description of the barn owl in a paragraph-->
     The barn owl also known
     as the <strong> common barn owl
     </strong> is one of the most
@@ -38,7 +34,7 @@
   </p>
   <hr />
 
-  <pre style="text-align:center;">                    <!--A poem with special formatting that html will save because of the <pre> tag-->
+  <pre>                                                 <!--A poem with special formatting that html will save because of the <pre> tag-->
 
   The common barn owl
 
@@ -50,25 +46,29 @@
 
   </pre>
 
-  <p style="text-align:center;">                      <!--A centered image of a barn owl-->
-      <img src="Barn Owl.png" alt="Picture of a barn owl" width="350" height="435" />
-  </p>
+  <div class="center">
+    <p>                                                 <!--A centered image of a barn owl-->
+        <img src="Barn Owl.png" alt="Picture of a barn owl" width="350" height="435" />
+    </p>
+  </div>
 
-  <p style="text-align:center;font-size:20px">        <!--A citation of the barn owl picture with an abbreviation for the BWC-->
-    <small>                                           <!--Also, the text is made smaller using the <small> tag-->
-      <cite>
-        (Barn owl at the
-          <abbr title="British Wildlife Center">
-            BWC
-          </abbr>
-        , England)
-      </cite>
-    </small>
-  </p>
-  <hr />
+  <div class="center">
+    <p>                                                 <!--A citation of the barn owl picture with an abbreviation for the BWC-->
+      <small>                                           <!--Also, the text is made smaller using the <small> tag-->
+        <cite>
+          (Barn owl at the
+            <abbr title="British Wildlife Center">
+              BWC
+            </abbr>
+            , England)
+          </cite>
+        </small>
+      </p>
+    <hr />
+  </div>
 
-  <p>                                                 <!--A series of internal anchors that make up the table of contents-->
-    <h3>
+  <p>                                                  <!--A series of internal anchors that make up the table of contents-->
+    <h3 id="Pink">
       Table of Contents:
     </h3>
     <a href = "#Location">Location</a> <br/>
@@ -80,12 +80,12 @@
     <a href = "#More Resources">More Resources</a>
   </p>
 
-  <h1 style="color:DodgerBlue;">                      <!--Large blue title for an important paragraph-->
+  <h2 id="Blue">                                                <!--Large blue title for an important paragraph-->
     <a name = "Location"/>
     Location
-  </h1>
+  </h2>
 
-  <p style="font-size:20px">                          <!--Making the font size 20-->
+  <p>                                                 <!--Making the font size 20-->
     This widely distributed species is found
       <em>
         all through the globe
@@ -103,12 +103,12 @@
   </p>                                                <!--Information about the barn owl in a paragraph-->
   <hr />
 
-  <h1 style="color:red;">                             <!--Large red title for an important paragraph-->
+  <h2 id="Red">                                                <!--Large red title for an important paragraph-->
     <a name = "Size/Color"/>
     Size/Color
-  </h1>
+  </h2>
 
-  <p style="font-size:20px">                          <!--More information about the barn owl in a paragraph-->
+  <p>                                                 <!--More information about the barn owl in a paragraph-->
     Since there are over 28 species,                  <!--The word "round" is visibly deleted/crossed out because of the <del> tag-->
     the size and color varies. However, most          <!--The words "heartshaped face" is visibly inserted in because of the <ins> tag-->
     barn owls measure around
@@ -130,12 +130,12 @@
   </p>
   <hr />
 
-  <h1 style="color:#B7950B">                          <!--Large bordered title for an important paragraph-->
+  <h2 id="Yellow">                                              <!--Large bordered title for an important paragraph-->
     <a name = "Diet/Feeding"/>
     Diet/Feeding
-  </h1>
+  </h2>
 
-  <p style="font-size:20px">                          <!--Blockquote for a quote from the Peregrine Fund-->
+  <p>                                               <!--Blockquote for a quote from the Peregrine Fund-->
     The diet of the barn owl is best explained
     by the Peregrine Fund, a well-respected organization.
       <blockquote>
@@ -148,7 +148,7 @@
       </blockquote>
   </p>
 
-  <p style="font-size:20px">
+  <p>
     Another cite explains how barn owls eat their
     food.
       <q>
@@ -163,11 +163,11 @@
   <hr />
 
   <p>                                                  <!--An informative table with information on the barn owl-->
-    <h1 style="color:#D68910;">
+    <h2 id="Orange">
       <a name = "Information Table"/>
       Informational Table
-    </h1>
-    <table style="width:100%">
+    </h2>
+    <table>
       <tr>
         <th>Life Expectancy</th>
         <th>Food Chain</th>
@@ -183,29 +183,33 @@
   <hr />
 
   <p>                                                  <!--An unordered list for information on reproduction-->
-    <h1 style="color:#28B463">
+    <h2 id="Green">
       <a name = "Reproduction"/>
       Reproduction
-    </h1>
-    <ul style="list-style-type:circle;">
-      <li>Barn owls mate for life</li>
-      <li>Females lay a clutch of 3-6 eggs</li>
-      <ul style="list-style-type:disc;">
+    </h2>
+    <div class="circlelist">
+      <ul>
+        <li>Barn owls mate for life</li>
+        <li>Females lay a clutch of 3-6 eggs</li>
+    <div class="disclist">
+      <ul>
         <li>The eggs are laid out one at a time every few days over 2-3 weeks</li>
         <li>The hatching of eggs is also spread out over a 2 or 3 week interval</li>
       </ul>
+    </div>
       <li>At about 3 weeks of age, the owlets are able to eat by themselves</li>
       <li>By two months of age, the young are completely independent</li>
       <li>Barn owls raise 2-3 broods per year</li>
     </ul>
+    </div>
   </p>
   <hr />
 
   <p>                                                  <!--An ordered list for information on the best shelters-->
-    <h1 style="color:#76448A">
+    <h2 id="Purple">
       <a name = "Shelters"/>
       The Best Shelters (in ranked order)
-    </h1>
+    </h2>
     <ol type="I">
       <li>Temperate Forests</li>
       <li>Grasslands</li>
@@ -217,26 +221,28 @@
   <hr />
 
   <p>                                                 <!--An iFrame on the Cosley Zoo website-->
-    <h1 style="color:#707B7C">
+    <h2 id="Grey">
       <a name = "More Resources"/>
       Additional Resources
-    </h1>
-    <iframe src="https://cosleyzoo.org/common-barn-owl/#:~:text=In%20the%20wild%2C%20Barn%20Owls,be%2015%2D18%20years%20old."
-    name="barnowlframe" height="500" width="600" title="Common Barn Owl Website"></iframe>
+    </h2>
+    <div class="boxmodel">
+      <iframe src="https://cosleyzoo.org/common-barn-owl/#:~:text=In%20the%20wild%2C%20Barn%20Owls,be%2015%2D18%20years%20old."
+      name="barnowlframe" title="Common Barn Owl Website"></iframe>
     <br />
     <a href="https://cosleyzoo.org/common-barn-owl/#:~:text=In%20the%20wild%2C%20Barn%20Owls,be%2015%2D18%20years%20old."
       target="barnowlfframe">
       Cosley Zoo: The Common Barn Owl
     </a>
+    </div>
 
     <br /><br />                                     <!--A button that when you click sends you to a wikipedia page-->
     If you wish to learn even more, click these buttons:
     <form action="https://en.wikipedia.org/wiki/Barn_owl" method="get" target="_blank">
-         <button style="font-size:20px;background-color:#FF2F1A" type="submit">Additional Information</button>
+         <button type="submit">Additional Information</button>
     </form>
     <br />
 
-    <blockquote id="Predators" style="display:none"> <!--Text that is not displayed until the predator button is clicked-->
+    <blockquote id="Predators">                      <!--Text that is not displayed until the predator button is clicked-->
       Predators of the barn owl include large American opossums (Didelphis), the common raccoon, and similar carnivorous mammals, as well as eagles, larger hawks and other owls. Among the latter, the great horned owl (Bubo virginianus) in the Americas and the Eurasian eagle-owl (B. bubo) are noted predators of barn owls. Despite some sources claiming that there is little evidence of predation by great horned owls, one study from Washington found that 10.9% of the local great horned owl's diet was made up of barn owls.[49][50][51] In Africa, the principal predators of barn owls are Verreaux's eagle-owls and Cape eagle-owls.[52][53] In Europe, although less dangerous than the eagle-owls, the chief diurnal predators are the northern goshawk (Accipiter gentilis) and the common buzzard (Buteo buteo). About 12 other large diurnal raptors and owls have also been reported as predators of barn owls, ranging from the similar-sized Cooper's hawk and scarcely larger tawny owl to huge bald and golden eagles.[54] The goshawk and the eagle-owls are on the increase because of the greater protection these birds now receive.[28]
 
       File:Tyto furcata, three chicks hissing and clicking, USA.ogv
@@ -246,12 +252,12 @@
       Barn owls are hosts to a wide range of parasites. Fleas are present at nesting sites and externally the birds are attacked by feather lice and feather mites which chew the barbules of the feathers and which are transferred from bird to bird by direct contact. Blood-sucking flies such as Ornithomyia avicularia are often present, moving about among the plumage. Internal parasites include the fluke Strigea strigis, the tapeworm Paruternia candelabraria, several species of parasitic round worm and spiny-headed worms in the genus Centrorhynchus. These gut parasites are acquired when the birds feed on infected prey, which provide intermediate hosts for the parasites.[55] There is some indication that female birds with more and larger spots have a greater resistance to external parasites. This is correlated with smaller bursa of Fabricius, glands associated with antibody production, and a lower fecundity of the blood-sucking fly Carnus hemapterus that attacks nestlings.[56]"
       <hr />
       SOURCE LINK:
-      <cite style="color:DodgerBlue">
+      <cite>
         https://en.wikipedia.org/wiki/Barn_owl?
       </cite>
     </blockquote>
     <br />                                           <!--A button that when you click reveals the hidden text above-->
-    <button class="button" style="font-size:20px;background-color:#2BF2C7" onclick="mybutton()">Additional Information #2</button>
+    <button class="button" onclick="mybutton()">Additional Information #2</button>
   </p>
 
 </body>
