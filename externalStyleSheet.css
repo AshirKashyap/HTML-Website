@@ -1,0 +1,97 @@
+body {                                    /* A bunch of CSS style attributes */
+  background-color: #E8F8F5;
+}
+
+h1{
+  text-align: center;
+}
+
+h2 {
+  color: #28B463;
+}
+
+h3 {
+  color: #B7950B;
+}
+
+p {
+  font-size: 20px;
+}
+
+pre {
+  text-align: center;
+}
+
+table {
+  width: 100%;
+}
+
+cite {
+  color: DodgerBlue;
+}
+
+button {
+  font-size: 20px;
+  background-color: #2BF2C7;
+}
+
+iframe {
+  width: 330px;
+  height: 430px;
+}
+
+.center {                                /* A center class that when applied centers everything */
+  text-align: center;
+}
+
+.circlelist {                            /* A circlelist class that when applied uses circles to list */
+  list-style-type: circle;
+}
+
+.disclist {                              /* A disclist class that when applied uses discs to list */
+  list-style-type: disc;
+}
+
+.boxmodel {                              /* A demonstration of the box model*/
+  margin: 20px;
+  border: 15px solid DodgerBlue;
+  padding: 10px;
+  width: 350px;
+  height: 450px;
+}
+
+#Predators {                             /* An id used to hide text*/
+  display: none;
+}
+
+#Blue {                                  /* A series of id's for specific colors*/
+  color: DodgerBlue;
+}
+
+#Red {
+  color: red;
+}
+
+#Yellow {
+  color: #B7950B;
+}
+
+#Orange {
+  color: #D68910;
+}
+
+#Green {
+  color: #28B463;
+}
+
+#Purple {
+  color: #76448A;
+}
+
+#Grey {
+  color: #707B7C;
+}
+
+#Pink {
+  color: #F644F9;
+}
