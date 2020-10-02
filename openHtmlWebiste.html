@@ -3,9 +3,12 @@
 
 <head>
   <title>Information on the Barn Owl</title>
-  <link href="externalStyleSheet.css" rel="stylesheet">
   <meta charset="UTF-8">                              <!--The style tag below makes the curse go in circles-->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
                                                       <!--My advanced HTML that displays the hidden colorful text and has an alert when the predator button is pressed-->
   <script type="text/javascript">
     function mybutton() {
@@ -14,24 +17,55 @@
       predators.style.color="#499833 ";
       alert("New Information Unlocked");
     }
-
   </script>
 </head>
 
 <body>                                                  <!--Set the background color to powderblue-->
-  <h1>                                                  <!--Large title for the website-->
-    The Barn Owl &#129417;
-  </h1>
+  <div class="container">
+    <h2>Navigation Bar</h2>
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <ul class="nav nav-tabs">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#Location">Basic Information</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#Location">Location</a>
+              <a class="dropdown-item" href="#Size/Color">Size/Color</a>
+              <a class="dropdown-item" href="#Diet/Feeding">Diet/Feeding</a></div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Information Table">Informational Table</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Reproduction">Reproduction</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Shelters">Shelters</a>
+          </li>
+        </ul>
+      </nav>
 
-  <p>                                                   <!--A quick description of the barn owl in a paragraph-->
-    The barn owl also known
-    as the <strong> common barn owl
-    </strong> is one of the most
-    common owls in the world. Here
-    is a picture of this <mark>
-    majestic animal </mark>!
-    &#128515;
-  </p>
+    <ul class="pagination justify-content-end" style="margin:20px 0">
+      <li class="page-item"><a class="page-link" href="#Location">Previous</a></li>
+      <li class="page-item active"><a class="page-link" href="#Size/Color">1</a></li>
+      <li class="page-item"><a class="page-link" href="#Diet/Feeding">2</a></li>
+      <li class="page-item"><a class="page-link" href="#Information Table">3</a></li>
+      <li class="page-item"><a class="page-link" href="#Reproduction">4</a></li>
+      <li class="page-item"><a class="page-link" href="#Shelters">5</a></li>
+      <li class="page-item"><a class="page-link" href="#More Resources">Next</a></li>
+    </ul>
+
+  <div class="jumbotron">                                 <!--Large title for the website-->
+    <h1>The Barn Owl &#129417;</h1>
+    <p>                                                   <!--A quick description of the barn owl in a paragraph-->
+      The barn owl also known
+      as the <strong> common barn owl
+      </strong> is one of the most
+      common owls in the world. Here
+      is a picture of this <mark>
+      majestic animal </mark>!
+      &#128515;
+    </p>
+  </div>
   <hr />
 
   <pre>                                                 <!--A poem with special formatting that html will save because of the <pre> tag-->
@@ -71,13 +105,41 @@
     <h3 id="Pink">
       Table of Contents:
     </h3>
-    <a href = "#Location">Location</a> <br/>
-    <a href = "#Size/Color">Size/Color</a> <br/>
-    <a href = "#Diet/Feeding">Diet/Feeding</a> <br/>
-    <a href = "#Information Table">Information Table</a> <br/>
-    <a href = "#Reproduction">Reproduction</a> <br/>
-    <a href = "#Shelters">Shelters</a> <br/>
-    <a href = "#More Resources">More Resources</a>
+    <a href = "#Location">
+      <p class="text-muted">
+        Location
+      </p>
+    </a>
+    <a href = "#Size/Color">
+      <p class="text-primary">
+        Size/Color
+      </p>
+    </a>
+    <a href = "#Diet/Feeding">
+      <p class="text-success">
+        Diet/Feeding
+      </p>
+    </a>
+    <a href = "#Information Table">
+      <p class="text-warning">
+        Information Table
+      </p>
+    </a>
+    <a href = "#Reproduction">
+      <p class="bg-danger">
+        Reproduction
+      </p>
+    </a>
+    <a href = "#Shelters">
+      <p class="bg-secondary">
+        Shelters
+      </p>
+    </a>
+    <a href = "#More Resources">
+      <p class="bg-dark">
+        More Resources
+      </p>
+    </a>
   </p>
 
   <h2 id="Blue">                                                <!--Large blue title for an important paragraph-->
@@ -162,23 +224,27 @@
   </p>
   <hr />
 
-  <p>                                                  <!--An informative table with information on the barn owl-->
-    <h2 id="Orange">
+  <p>
+    <h2>
       <a name = "Information Table"/>
-      Informational Table
+      Information Table
     </h2>
-    <table>
-      <tr>
-        <th>Life Expectancy</th>
-        <th>Food Chain</th>
-        <th>Fun Facts</th>
-      </tr>
-      <tr>
-        <td>They can live for 2 years in the wild and around 15-18 years in captivity.</td>
-        <td>They are the top of the food chain and control the pest populations of small animals such as mice!</td>
-        <td>Barn Owls have a special toe called a pectinated claw that has ridges and is used for cleaning the birds’ feathers.</td>
-      </tr>
-    </table>
+    <table class="table table-dark table-striped">
+      <thead>
+        <tr>
+          <th>Life Expectancy</th>
+          <th>Food Chain</th>
+          <th>Fun Facts</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>They can live for 2 years in the wild and around 15-18 years in captivity.</td>
+          <td>They are the top of the food chain and control the pest populations of small animals such as mice!</td>
+          <td>Barn Owls have a special toe called a pectinated claw that has ridges and is used for cleaning the birds’ feathers.</td>
+        </tr>
+      </tbody>
+    </table>                                                 <!--An informative table with information on the barn owl-->
   </p>
   <hr />
 
@@ -234,6 +300,14 @@
       Cosley Zoo: The Common Barn Owl
     </a>
     </div>
+    <br />
+
+    <button type="button" class="btn btn-info btn-lg">Additional Information</button>
+
+    <button class="btn btn-primary">
+      <span class="spinner-border spinner-border-lg"></span>
+        Creating Button...
+    </button>
 
     <br /><br />                                     <!--A button that when you click sends you to a wikipedia page-->
     If you wish to learn even more, click these buttons:
@@ -260,5 +334,6 @@
     <button class="button" onclick="mybutton()">Additional Information #2</button>
   </p>
 
+</div>
 </body>
 </html>
