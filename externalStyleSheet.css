@@ -1,5 +1,5 @@
 body {                                    /* A bunch of CSS style attributes */
-  background-color: #E8F8F5;
+  background-color: #F8FCFF;
 }
 
 h1{
@@ -94,4 +94,8 @@ iframe {
 
 #Pink {
   color: #F644F9;
+}
+
+#Black {
+  color: Black;
 }

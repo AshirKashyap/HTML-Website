@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en-US">                                   <!--Sets the language to English on the website-->
+
+<head>
+  <title>Information on the Barn Owl</title>
+  <meta charset="UTF-8">                              <!--The style tag below makes the curse go in circles-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="externalStyleSheet.css" rel="stylesheet">
+  <link rel="stylesheet" href="externalStyleSheet.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+                                                      <!--My advanced HTML that displays the hidden colorful text and has an alert when the predator button is pressed-->
+  <script type="text/javascript">
+    function mybutton() {
+      predators = document.getElementById("Predators");
+      predators.style.display="block";
+      predators.style.color="#499833 ";
+      alert("New Information Unlocked");
+    }
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <h2 id="Black">Navigation Bar</h2>
+      <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <ul class="nav nav-tabs">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#Location">Basic Information</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#Location">Location</a>
+              <a class="dropdown-item" href="#Size/Color">Size/Color</a>
+              <a class="dropdown-item" href="#Diet/Feeding">Diet/Feeding</a></div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Information Table">Informational Table</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Reproduction">Reproduction</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Shelters">Shelters</a>
+          </li>
+        </ul>
+      </nav>
+
+    <h1>The Barn Owl &#129417;</h1>
+    <p>                                                   <!--A quick description of the barn owl in a paragraph-->
+      The barn owl also known
+      as the <strong> common barn owl
+      </strong> is one of the most
+      common owls in the world. Here
+      is a picture of this <mark>
+      majestic animal </mark>!
+      &#128515;
+    </p>
+    <hr />
+
+    <p>                                                  <!--A series of internal anchors that make up the table of contents-->
+      <h3 id="Pink">
+        Table of Contents:
+      </h3>
+      <a href = "#Location">
+        <p> Location </p>
+      </a>
+      <a href = "#Size/Color">
+        <p> Size/Color </p>
+      </a>
+      <a href = "#Diet/Feeding">
+        <p> Diet/Feeding </p>
+      </a>
+      <a href = "#Information Table">
+        <p> Information Table </p>
+      </a>
+      <a href = "#Reproduction">
+        <p> Reproduction </p>
+      </a>
+      <a href = "#Shelters">
+        <p> Shelters </p>
+      </a>
+      <a href = "#More Resources">
+        <p> More Resources </p>
+      </a>
+    </p>
+
+    <pre>                                                 <!--A poem with special formatting that html will save because of the <pre> tag-->
+
+    The common barn owl
+
+    Found all across the Earth
+
+    Beautiful and majestic
+
+    No value for its worth
+
+    </pre>
+
+    <div class="center">
+      <p>                                                 <!--A centered image of a barn owl-->
+          <img src="Barn Owl.png" alt="Picture of a barn owl" width="350" height="435" />
+      </p>
+    </div>
+
+    <div>
+      <p>                                                 <!--A citation of the barn owl picture with an abbreviation for the BWC-->
+        <small>
+          <center>                                        <!--Also, the text is made smaller using the <small> tag-->
+            <cite>
+              (Barn owl at the
+                <abbr title="British Wildlife Center">
+                  BWC
+                </abbr>
+                , England)
+              </cite>
+            </center>
+          </small>
+        </p>
+      <hr />
+    </div>
+
+    <h2 id="Blue">                                                <!--Large blue title for an important paragraph-->
+      <a name = "Location"/>
+      Location
+    </h2>
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="collapse" data-target="#demo">Location</button>
+      <div id="demo" class="collapse">
+        <p>
+          This widely distributed species is found all through the globe
+          besides the polar and desert regions as well as most of Indonesia
+          and the Pacific Islands.
+        </p>
+        <hr />
+      </div>
+
+    <h2 id="Red">
+      <a name = "Size/Color"/>
+      Size/Color
+    </h2>
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="collapse" data-target="#demo">Size/Color</button>
+      <div id="demo" class="collapse">
+        <p>
+          Since there are over 28 species,
+          the size and color varies. However, most
+          barn owls measure around
+            <strong>
+              13 - 15 inches in length
+            </strong>
+          and have a wingspan of about
+            <strong>
+              31 - 37 inches
+            </strong>
+          . In addition, barn owls are white on the
+          face, body, and underwing and have a distinctly
+          round heartshaped face.
+        </p>
+        <hr />
+      </div>                                                      <!--More information about the barn owl in a paragraph-->
+
+    <h2 id="Yellow">                                              <!--Large bordered title for an important paragraph-->
+      <a name = "Diet/Feeding"/>
+      Diet/Feeding
+    </h2>
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="collapse" data-target="#demo">Diet/Feeding</button>
+      <div id="demo" class="collapse">
+        <p>                                                            <!--Blockquote for a quote from the Peregrine Fund-->
+          The diet of the barn owl is best explained
+          by the Peregrine Fund, a well-respected organization.
+            <blockquote>
+              Apart from rodents and other small mammals,
+              Barn Owls also hunt <br /> birds, fish,
+              reptiles, and insects. Barn Owls often hunt
+              on the edges <br /> of woodlands, scouting for
+              food from a perch or while in low, slow <br />
+              flight.
+            </blockquote>
+          Another cite explains how barn owls eat their
+          food.
+          <q>
+            Small prey is usually torn into chunks
+            and eaten completely including bones and
+            fur, while prey larger than about 100 g
+            (4 oz), such as baby rabbits, Cryptomys
+            blesmols, or Otomys vlei rats, is usually
+            dismembered and the inedible parts discarded.
+          </q>
+        </p>
+        <hr />
+      </div>
+
+    <h2>
+      <a name = "Information Table"/>
+      Information Table
+    </h2>
+    <button type="button" class="btn btn-primary btn-lg" data-toggle="collapse" data-target="#demo">Information Table</button>
+      <div id="demo" class="collapse">
+        <p>
+          <table class="table table-dark table-striped">
+            <thead>
+              <tr>
+                <th>Life Expectancy</th>
+                <th>Food Chain</th>
+                <th>Fun Facts</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>They can live for 2 years in the wild and around 15-18 years in captivity.</td>
+                <td>They are the top of the food chain and control the pest populations of small animals such as mice!</td>
+                <td>Barn Owls have a special toe called a pectinated claw that has ridges and is used for cleaning the birds’ feathers.</td>
+              </tr>
+            </tbody>
+          </table>
+        </p>
+        <hr />
+      </div>
+
+    <ul class="pagination justify-content-end" style="margin:20px 0">
+      <li class="page-item active"><a class="page-link" href="#Size/Color">1</a></li>
+      <li class="page-item"><a class="page-link" href="#SecondPage">Next</a></li>
+    </ul>
+                                                <!--An unordered list for information on reproduction-->
+</div>
+</body>
+</html>
