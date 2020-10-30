@@ -12,3 +12,8 @@ My final commit for the CSS is 5ea120f!
 For my Bootstrap 4, I used a dynamic grid and a navigation bar. For my five other things, I used pagination to skip to different pages/sections, a jumbotron to emphasize the title, the different color styles, a different table with additional styles, and a few buttons!
 
 My final commit for the Bootstrap 4 is 5a2bf34!
+
+# Final HTML
+For my final HTML, I made a website on the barn owl! I had two pages that could be accessed through the navigation bar at the top or the page numbers at the bottom. In addition, I used containers to neatly organize my website as well as buttons with dropdowns full of information. Lastly, I followed an E/2-column design and used colors to highlight the most important parts of my website!
+
+My final commit for the final HTML is 7367613!
